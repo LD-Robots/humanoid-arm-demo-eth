@@ -1,0 +1,8 @@
+// settings.json
+{
+  // other settings
+  "urdf-visualizer.packages": {
+      "myactuator_arm": "src/myactuator_arm"
+  },
+  // other settings
+}

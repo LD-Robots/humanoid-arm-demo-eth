@@ -1,0 +1,55 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/andrei-dragomir/ros2_eth/build/myactuator_arm
+-- Install configuration: ""
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/config
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/config/rviz
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/config/rviz/visualize.rviz
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/config/ethercat
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/config/ethercat/joint4_motor.yaml
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/config/ethercat/joint5_motor.yaml
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/config/ethercat/joint1_motor.yaml
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/config/ethercat/joint2_motor.yaml
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/config/ethercat/joint3_motor.yaml
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/config/controllers
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/config/controllers/arm_controllers.yaml
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/description
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/description/urdf
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/description/urdf/arm.urdf.xacro
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/description/urdf/arm_5dof.urdf.xacro
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/description/ros2_control
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/launch
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/launch/free.launch.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/launch/monitor.launch.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/launch/test.launch.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/lib/myactuator_arm/virtual_wall.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/lib/myactuator_arm/set_zero.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/ament_index/resource_index/package_run_dependencies/myactuator_arm
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/ament_index/resource_index/parent_prefix_path/myactuator_arm
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/environment/ament_prefix_path.sh
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/environment/ament_prefix_path.dsv
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/environment/path.sh
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/environment/path.dsv
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/local_setup.bash
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/local_setup.sh
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/local_setup.zsh
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/local_setup.dsv
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/package.dsv
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/ament_index/resource_index/packages/myactuator_arm
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/cmake/myactuator_armConfig.cmake
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/cmake/myactuator_armConfig-version.cmake
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_arm/share/myactuator_arm/package.xml

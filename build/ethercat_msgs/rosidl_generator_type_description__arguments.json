@@ -1,0 +1,12 @@
+{
+  "package_name": "ethercat_msgs",
+  "output_dir": "/home/andrei-dragomir/ros2_eth/build/ethercat_msgs/rosidl_generator_type_description/ethercat_msgs",
+  "idl_tuples": [
+    "/home/andrei-dragomir/ros2_eth/build/ethercat_msgs/rosidl_adapter/ethercat_msgs:srv/SetSdo.idl",
+    "/home/andrei-dragomir/ros2_eth/build/ethercat_msgs/rosidl_adapter/ethercat_msgs:srv/GetSdo.idl"
+  ],
+  "include_paths": [
+    "service_msgs:/opt/ros/jazzy/share/service_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces"
+  ]
+}

@@ -1,0 +1,369 @@
+[INFO] [launch]: All log files can be found below /home/andrei-dragomir/.ros/log/2026-01-28-17-42-40-634539-andrei-dragomir-LP5-51116
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [51121]
+[INFO] [ros2_control_node-2]: process started with pid [51122]
+[INFO] [spawner-3]: process started with pid [51123]
+[INFO] [spawner-4]: process started with pid [51124]
+[INFO] [spawner-5]: process started with pid [51125]
+[INFO] [virtual_wall.py-6]: process started with pid [51126]
+[INFO] [rviz2-7]: process started with pid [51127]
+[robot_state_publisher-1] [INFO] [1769614960.733903538] [robot_state_publisher]: Robot initialized
+[ros2_control_node-2] [INFO] [1769614960.739833982] [controller_manager]: Using Steady (Monotonic) clock for triggering controller manager cycles.
+[ros2_control_node-2] [INFO] [1769614960.742354599] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+[ros2_control_node-2] [INFO] [1769614960.743086178] [controller_manager]: update rate is 1000 Hz
+[ros2_control_node-2] [INFO] [1769614960.743097543] [controller_manager]: Overruns handling is : enabled
+[ros2_control_node-2] [INFO] [1769614960.743101365] [controller_manager]: Spawning controller_manager RT thread with scheduler priority: 50
+[ros2_control_node-2] [WARN] [1769614960.743145649] [controller_manager]: Could not enable FIFO RT scheduling policy: with error number <1>(Operation not permitted). See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.
+[ros2_control_node-2] [INFO] [1769614960.743680569] [controller_manager]: Received robot description from topic.
+[ros2_control_node-2] [INFO] [1769614960.745729552] [controller_manager]: Loading hardware 'EthercatSystem' 
+[ros2_control_node-2] [INFO] [1769614960.747179519] [controller_manager]: Loaded hardware 'EthercatSystem' from plugin 'ethercat_driver/EthercatDriver'
+[ros2_control_node-2] [INFO] [1769614960.747221451] [controller_manager]: Initialize hardware 'EthercatSystem' 
+[ros2_control_node-2] [INFO] [1769614960.748641805] [EthercatDriver]: joints
+[ros2_control_node-2] [INFO] [1769614960.749747183] [EcPdoChannelManager]: {0x6040, 0x0, 16}
+[ros2_control_node-2] [INFO] [1769614960.749764125] [EcPdoChannelManager]: {0x607a, 0x0, 32}
+[ros2_control_node-2] [INFO] [1769614960.749774666] [EcPdoChannelManager]: {0x60ff, 0x0, 32}
+[ros2_control_node-2] [INFO] [1769614960.749784366] [EcPdoChannelManager]: {0x6071, 0x0, 16}
+[ros2_control_node-2] [INFO] [1769614960.749794861] [EcPdoChannelManager]: {0x6072, 0x0, 16}
+[ros2_control_node-2] [INFO] [1769614960.749805057] [EcPdoChannelManager]: {0x6060, 0x0, 8}
+[ros2_control_node-2] [INFO] [1769614960.749815587] [EcPdoChannelManager]: {0x5ff1, 0x0, 8}
+[ros2_control_node-2] [INFO] [1769614960.749829398] [EcPdoChannelManager]: {0x6041, 0x0, 16}
+[ros2_control_node-2] [INFO] [1769614960.749839583] [EcPdoChannelManager]: {0x6064, 0x0, 32}
+[ros2_control_node-2] [INFO] [1769614960.749848574] [EcPdoChannelManager]: {0x606c, 0x0, 32}
+[ros2_control_node-2] [INFO] [1769614960.749858319] [EcPdoChannelManager]: {0x6077, 0x0, 16}
+[ros2_control_node-2] [INFO] [1769614960.749866896] [EcPdoChannelManager]: {0x603f, 0x0, 16}
+[ros2_control_node-2] [INFO] [1769614960.749876292] [EcPdoChannelManager]: {0x6061, 0x0, 8}
+[ros2_control_node-2] [INFO] [1769614960.749884657] [EcPdoChannelManager]: {0x5ff2, 0x0, 8}
+[ros2_control_node-2] [INFO] [1769614960.749922486] [EthercatDriver]: joints
+[ros2_control_node-2] [INFO] [1769614960.750274846] [EcPdoChannelManager]: {0x6040, 0x0, 16}
+[ros2_control_node-2] [INFO] [1769614960.750286129] [EcPdoChannelManager]: {0x607a, 0x0, 32}
+[ros2_control_node-2] [INFO] [1769614960.750296853] [EcPdoChannelManager]: {0x60ff, 0x0, 32}
+[ros2_control_node-2] [INFO] [1769614960.750306899] [EcPdoChannelManager]: {0x6071, 0x0, 16}
+[ros2_control_node-2] [INFO] [1769614960.750317975] [EcPdoChannelManager]: {0x6072, 0x0, 16}
+[ros2_control_node-2] [INFO] [1769614960.750328783] [EcPdoChannelManager]: {0x6060, 0x0, 8}
+[ros2_control_node-2] [INFO] [1769614960.750338496] [EcPdoChannelManager]: {0x5ff1, 0x0, 8}
+[ros2_control_node-2] [INFO] [1769614960.750352456] [EcPdoChannelManager]: {0x6041, 0x0, 16}
+[ros2_control_node-2] [INFO] [1769614960.750362342] [EcPdoChannelManager]: {0x6064, 0x0, 32}
+[ros2_control_node-2] [INFO] [1769614960.750371708] [EcPdoChannelManager]: {0x606c, 0x0, 32}
+[ros2_control_node-2] [INFO] [1769614960.750381076] [EcPdoChannelManager]: {0x6077, 0x0, 16}
+[ros2_control_node-2] [INFO] [1769614960.750391182] [EcPdoChannelManager]: {0x603f, 0x0, 16}
+[ros2_control_node-2] [INFO] [1769614960.750401193] [EcPdoChannelManager]: {0x6061, 0x0, 8}
+[ros2_control_node-2] [INFO] [1769614960.750410231] [EcPdoChannelManager]: {0x5ff2, 0x0, 8}
+[ros2_control_node-2] [INFO] [1769614960.750418585] [EthercatDriver]: Got 2 modules
+[ros2_control_node-2] [INFO] [1769614960.750426763] [controller_manager]: Successful initialization of hardware 'EthercatSystem'
+[ros2_control_node-2] [INFO] [1769614960.750529638] [resource_manager]: 'configure' hardware 'EthercatSystem' 
+[ros2_control_node-2] [INFO] [1769614960.750532988] [resource_manager]: Successful 'configure' of hardware 'EthercatSystem'
+[ros2_control_node-2] [INFO] [1769614960.750536516] [resource_manager]: 'activate' hardware 'EthercatSystem' 
+[ros2_control_node-2] [INFO] [1769614960.750539123] [EthercatDriver]: Starting ...please wait...
+[ros2_control_node-2] [INFO] [1769614960.750616692] [EthercatDriver]: { 0, 0, 0x202008, 0x0, 0x6040, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750619443] [EthercatDriver]: { 0, 0, 0x202008, 0x0, 0x607a, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750620678] [EthercatDriver]: { 0, 0, 0x202008, 0x0, 0x60ff, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750621789] [EthercatDriver]: { 0, 0, 0x202008, 0x0, 0x6071, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750639936] [EthercatDriver]: { 0, 0, 0x202008, 0x0, 0x6072, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750641581] [EthercatDriver]: { 0, 0, 0x202008, 0x0, 0x6060, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750642712] [EthercatDriver]: { 0, 0, 0x202008, 0x0, 0x5ff1, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750643852] [EthercatDriver]: { 0, 0, 0x202008, 0x0, 0x6041, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750644915] [EthercatDriver]: { 0, 0, 0x202008, 0x0, 0x6064, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750645957] [EthercatDriver]: { 0, 0, 0x202008, 0x0, 0x606c, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750647011] [EthercatDriver]: { 0, 0, 0x202008, 0x0, 0x6077, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750648060] [EthercatDriver]: { 0, 0, 0x202008, 0x0, 0x603f, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750649115] [EthercatDriver]: { 0, 0, 0x202008, 0x0, 0x6061, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750650142] [EthercatDriver]: { 0, 0, 0x202008, 0x0, 0x5ff2, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750662239] [EthercatDriver]: { 0, 1, 0x202008, 0x0, 0x6040, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750663792] [EthercatDriver]: { 0, 1, 0x202008, 0x0, 0x607a, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750664950] [EthercatDriver]: { 0, 1, 0x202008, 0x0, 0x60ff, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750666020] [EthercatDriver]: { 0, 1, 0x202008, 0x0, 0x6071, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750667056] [EthercatDriver]: { 0, 1, 0x202008, 0x0, 0x6072, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750668090] [EthercatDriver]: { 0, 1, 0x202008, 0x0, 0x6060, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750669121] [EthercatDriver]: { 0, 1, 0x202008, 0x0, 0x5ff1, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750670157] [EthercatDriver]: { 0, 1, 0x202008, 0x0, 0x6041, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750671201] [EthercatDriver]: { 0, 1, 0x202008, 0x0, 0x6064, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750672324] [EthercatDriver]: { 0, 1, 0x202008, 0x0, 0x606c, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750673369] [EthercatDriver]: { 0, 1, 0x202008, 0x0, 0x6077, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750674396] [EthercatDriver]: { 0, 1, 0x202008, 0x0, 0x603f, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750675428] [EthercatDriver]: { 0, 1, 0x202008, 0x0, 0x6061, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.750676461] [EthercatDriver]: { 0, 1, 0x202008, 0x0, 0x5ff2, 0x0 }
+[ros2_control_node-2] [INFO] [1769614960.759536600] [EthercatDriver]: Successfully downloaded SDO (0x6060:0) for slave 0
+[ros2_control_node-2] [INFO] [1769614960.767305436] [EthercatDriver]: Successfully downloaded SDO (0x6072:0) for slave 0
+[ros2_control_node-2] [INFO] [1769614960.776568599] [EthercatDriver]: Successfully downloaded SDO (0x6060:0) for slave 1
+[ros2_control_node-2] [INFO] [1769614960.785645621] [EthercatDriver]: Successfully downloaded SDO (0x6072:0) for slave 1
+[ros2_control_node-2] [INFO] [1769614960.786628895] [EthercatDriver]: Activated EcMaster!
+[ros2_control_node-2] [WARN] [1769614960.790179940] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 1000 Hz. The loop took 2.873781 ms (missed cycles : 3).
+[spawner-3] [INFO] [1769614960.895113765] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[virtual_wall.py-6] [INFO] [1769614960.937654943] [virtual_wall]: Virtual wall active: limits=+/-1.571 rad (90.0 deg), soft margin=0.262 rad, stiffness=10.0 Nm/rad
+[rviz2-7] [INFO] [1769614961.090520477] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-7] [INFO] [1769614961.090587988] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-7] [INFO] [1769614961.107469750] [rviz2]: Stereo is NOT SUPPORTED
+[ros2_control_node-2] [WARN] [1769614961.786762628] [EthercatDriver]: 2 slave(s).
+[ros2_control_node-2] [WARN] [1769614961.786789447] [EthercatDriver]: Master AL states: 0x02.
+[ros2_control_node-2] [WARN] [1769614961.786793897] [EthercatDriver]: Link is up.
+[ros2_control_node-2] [WARN] [1769614961.786805018] [EthercatDriver]: Slave: State 0x02.
+[ros2_control_node-2] [WARN] [1769614961.786808244] [EthercatDriver]: Slave: online.
+[ros2_control_node-2] [WARN] [1769614961.786811259] [EthercatDriver]: Slave: State 0x02.
+[ros2_control_node-2] [WARN] [1769614961.786813329] [EthercatDriver]: Slave: online.
+[ros2_control_node-2] [INFO] [1769614961.786825672] [EthercatDriver]: MODE OF OPERATION (0x6060) command: mode_of_operation_=8, channel.default_value=10.000000
+[ros2_control_node-2] [INFO] [1769614961.786838697] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Start)
+[ros2_control_node-2] [INFO] [1769614961.786844222] [EthercatDriver]: STATE: Not Ready to Switch On with status word :0
+[ros2_control_node-2] [INFO] [1769614961.786848888] [EthercatDriver]: STATE: Not Ready to Switch On with status word :0
+[ros2_control_node-2] [INFO] [1769614961.836707331] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614961.886719484] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614961.936706863] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [WARN] [1769614961.986696581] [EthercatDriver]: Slave: State 0x01.
+[ros2_control_node-2] [INFO] [1769614961.986713364] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [WARN] [1769614962.086707645] [EthercatDriver]: Slave: State 0x02.
+[ros2_control_node-2] [INFO] [1769614967.286777899] [EthercatDriver]: Domain: WC 3.
+[ros2_control_node-2] [INFO] [1769614967.286811327] [EthercatDriver]: Domain: State INCOMPLETE.
+[ros2_control_node-2] [WARN] [1769614967.286816288] [EthercatDriver]: Slave: State 0x04.
+[ros2_control_node-2] [INFO] [1769614967.286823729] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.286828196] [EthercatDriver]: STATE: Operation Enabled with status word :4663
+[ros2_control_node-2] [INFO] [1769614967.286831849] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.296707963] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.296724292] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.306696255] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.306704025] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.316697060] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.316706332] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.326699864] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.326708901] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.336695631] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.336706660] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.346695909] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.346705733] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.356692507] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.356697520] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.366702338] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.366717773] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.376700011] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.376710428] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.386693863] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.386698486] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.396697793] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.396706670] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.406691665] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.406695703] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.416699762] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.416709707] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.426696036] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.426704305] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.436698542] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.436707097] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.446695041] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.446703213] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.456697970] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.456708037] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.466701154] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.466710298] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.476693994] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.476698603] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.486697105] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.486704992] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.496692290] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.496696968] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.506692640] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.506697546] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.516700755] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.516712166] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.526690658] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.526695284] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.536694060] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.536699267] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.546712742] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.546732875] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.556701922] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.556714747] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.566699727] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.566709803] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.576697937] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.576707692] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.586703185] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.586712609] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.596692560] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.596697961] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.606693365] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 10 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.606698568] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.616705588] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.616722000] [EthercatDriver]: STATE: Ready to Switch On with status word :4657
+[ros2_control_node-2] [INFO] [1769614967.616728473] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.626699129] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.626711053] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.636690106] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.636693278] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.646696121] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.646702895] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.656693923] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.656700601] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.666710994] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.666731845] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.676697997] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.676707168] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [WARN] [1769614967.686693116] [EthercatDriver]: Slave: State 0x08.
+[ros2_control_node-2] [WARN] [1769614967.686698423] [EthercatDriver]: Slave: (alias: 0, pos: 0, vendor_id: 2105352, prod_id: 0) --> operational.
+[ros2_control_node-2] [WARN] [1769614967.686701929] [EthercatDriver]: Slave: State 0x01.
+[ros2_control_node-2] [INFO] [1769614967.686720398] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.686722401] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.696698124] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.696706191] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.706700752] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.706708699] [EthercatDriver]: STATE: Switch On with status word :4659
+[ros2_control_node-2] [INFO] [1769614967.706713940] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.716688533] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Switch On)
+[ros2_control_node-2] [INFO] [1769614967.716691400] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.726690715] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Switch On)
+[ros2_control_node-2] [INFO] [1769614967.726694594] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.736692471] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Switch On)
+[ros2_control_node-2] [INFO] [1769614967.736697186] [EthercatDriver]: STATE: Operation Enabled with status word :4663
+[ros2_control_node-2] [INFO] [1769614967.736700175] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.746700167] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.746711898] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.756690297] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.756694793] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.766688791] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.766692009] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.776697879] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.776707015] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [WARN] [1769614967.786695022] [EthercatDriver]: Slave: State 0x02.
+[ros2_control_node-2] [INFO] [1769614967.786702178] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.786705110] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.796697912] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.796706607] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.806689431] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.806693259] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.816691310] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.816695407] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.826691318] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.826695582] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.836692222] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.836696848] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.846698856] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.846710238] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.856691676] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.856697355] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.866792925] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.866810579] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.876696551] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.876705595] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.886704269] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.886713945] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.896689523] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.896692432] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.906689289] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.906691779] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.916696037] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.916704642] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.926692351] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.926697317] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.936692251] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.936696942] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.946695927] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.946705825] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.956696976] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.956706253] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.966693187] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.966699343] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.976695473] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.976704014] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.986694704] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.986699270] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614967.996691637] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614967.996696522] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.006705395] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.006722467] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.016700308] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.016711659] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.026693088] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.026698336] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.036694935] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.036702700] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.046694726] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.046701556] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.056692025] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.056697960] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.066689570] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.066693099] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.076693167] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.076699435] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.086694393] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.086700163] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.096691420] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.096694903] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.106694854] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.106702675] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.116694034] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.116698661] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.126693093] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.126697435] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.136705039] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.136740126] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.146782510] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.146791185] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.156696503] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.156704809] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.166695549] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.166704925] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.176694349] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.176700720] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.186697366] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.186704486] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.196696314] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.196704675] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.206694996] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.206702558] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.216691763] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.216696019] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.226693554] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.226699256] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.236690903] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.236695995] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.246693381] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.246697383] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.256697349] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.256706618] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.266693685] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.266699993] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.276692071] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.276697375] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.286702003] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.286708901] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.296704870] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.296718766] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.306692733] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.306696864] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.316689604] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.316705321] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.326694010] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.326701986] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.336690109] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.336693516] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.346770665] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.346782524] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.356698511] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.356710627] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.366701574] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.366713612] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.376799022] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.376809331] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.386695047] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.386702426] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.396795030] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.396801885] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.406841055] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.406847305] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.416694155] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.416700601] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.426699762] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.426709964] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.436699961] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.436712584] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.446696983] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.446705407] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.456690002] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.456693609] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.466692649] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.466697451] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.476698380] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.476706180] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.486703017] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.486711129] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.496697071] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.496730804] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)
+[ros2_control_node-2] [INFO] [1769614968.506688301] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 8 (state=Operation Enabled)
+[ros2_control_node-2] [INFO] [1769614968.506690954] [EthercatDriver]: MODE OF OPERATION DISPLAY (0x6061): 0 (state=Not Ready to Switch On)

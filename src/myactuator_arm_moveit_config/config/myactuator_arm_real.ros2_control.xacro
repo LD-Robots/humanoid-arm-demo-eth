@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:macro name="myactuator_arm_ros2_control_real" params="name pkg_share">
+        <ros2_control name="${name}" type="system">
+            <hardware>
+                <!-- Real EtherCAT hardware -->
+                <plugin>ethercat_driver/EthercatDriver</plugin>
+                <param name="master_id">0</param>
+                <param name="control_frequency">100</param>
+            </hardware>
+
+            <!-- Joint 1: Shoulder pitch - X6 motor, slave 0 -->
+            <joint name="joint1">
+                <command_interface name="position"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+                <ec_module name="MyActuatorX6_Joint1">
+                    <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
+                    <param name="alias">0</param>
+                    <param name="position">0</param>
+                    <param name="slave_config">${pkg_share}/config/ethercat/joint1_motor.yaml</param>
+                    <param name="mode_of_operation">8</param>  <!-- CSP mode for MoveIt -->
+                </ec_module>
+            </joint>
+
+            <!-- Joint 2: Shoulder roll - X6 motor, slave 1 -->
+            <joint name="joint2">
+                <command_interface name="position"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+                <ec_module name="MyActuatorX6_Joint2">
+                    <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
+                    <param name="alias">0</param>
+                    <param name="position">1</param>
+                    <param name="slave_config">${pkg_share}/config/ethercat/joint2_motor.yaml</param>
+                    <param name="mode_of_operation">8</param>
+                </ec_module>
+            </joint>
+
+            <!-- Joint 3: Shoulder yaw - X6 motor, slave 2 -->
+            <joint name="joint3">
+                <command_interface name="position"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+                <ec_module name="MyActuatorX6_Joint3">
+                    <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
+                    <param name="alias">0</param>
+                    <param name="position">2</param>
+                    <param name="slave_config">${pkg_share}/config/ethercat/joint3_motor.yaml</param>
+                    <param name="mode_of_operation">8</param>
+                </ec_module>
+            </joint>
+
+            <!-- Joint 4: Elbow pitch - X4 motor, slave 3 -->
+            <joint name="joint4">
+                <command_interface name="position"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+                <ec_module name="MyActuatorX4_Joint4">
+                    <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
+                    <param name="alias">0</param>
+                    <param name="position">3</param>
+                    <param name="slave_config">${pkg_share}/config/ethercat/joint4_motor.yaml</param>
+                    <param name="mode_of_operation">8</param>
+                </ec_module>
+            </joint>
+
+            <!-- Joint 5: Elbow yaw - X4 motor, slave 4 -->
+            <joint name="joint5">
+                <command_interface name="position"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+                <ec_module name="MyActuatorX4_Joint5">
+                    <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
+                    <param name="alias">0</param>
+                    <param name="position">4</param>
+                    <param name="slave_config">${pkg_share}/config/ethercat/joint5_motor.yaml</param>
+                    <param name="mode_of_operation">8</param>
+                </ec_module>
+            </joint>
+        </ros2_control>
+    </xacro:macro>
+</robot>

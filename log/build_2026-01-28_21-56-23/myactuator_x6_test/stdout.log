@@ -1,0 +1,69 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/andrei-dragomir/ros2_eth/build/myactuator_x6_test
+-- Install configuration: ""
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/config
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/config/myactuator_x6_motor0.yaml
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/config/myactuator_x6_specs.md
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/config/controllers.yaml
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/config/myactuator_x6_with_offset.yaml
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/config/controllers_dual.yaml
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/config/controllers_effort.yaml
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/config/myactuator_x6.yaml
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/config/visualize.rviz
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/config/controllers_position.yaml
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/config/myactuator_x6_motor1.yaml
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/launch
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/launch/x6_base.launch.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/launch/x6_moveit.launch.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/launch/x6_visualize.launch.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/launch/x6_test.launch.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/launch/x6_effort.launch.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/launch/x6_free.launch.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/launch/x6_effort_safe.launch.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/urdf
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/urdf/x6_test_free.urdf.xacro
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/urdf/x6_test.urdf.xacro
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/urdf/x6_test_effort.urdf.xacro
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/lib/myactuator_x6_test/test_trajectory.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/lib/myactuator_x6_test/test_simple_position.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/lib/myactuator_x6_test/test_pid_effort.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/lib/myactuator_x6_test/test_moveit_ready.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/lib/myactuator_x6_test/test_speed_position.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/lib/myactuator_x6_test/test_compliance.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/lib/myactuator_x6_test/safety_controller.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/lib/myactuator_x6_test/virtual_wall.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/lib/myactuator_x6_test/switch_controller.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/lib/myactuator_x6_test/controller_switcher.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/lib/myactuator_x6_test/position_mode_manager.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/lib/myactuator_x6_test/mode_switcher.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/lib/myactuator_x6_test/set_zero.py
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/ament_index/resource_index/package_run_dependencies/myactuator_x6_test
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/ament_index/resource_index/parent_prefix_path/myactuator_x6_test
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/environment/ament_prefix_path.sh
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/environment/ament_prefix_path.dsv
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/environment/path.sh
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/environment/path.dsv
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/local_setup.bash
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/local_setup.sh
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/local_setup.zsh
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/local_setup.dsv
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/package.dsv
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/ament_index/resource_index/packages/myactuator_x6_test
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/cmake/myactuator_x6_testConfig.cmake
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/cmake/myactuator_x6_testConfig-version.cmake
+-- Installing: /home/andrei-dragomir/ros2_eth/install/myactuator_x6_test/share/myactuator_x6_test/package.xml

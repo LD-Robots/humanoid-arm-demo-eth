@@ -1,0 +1,91 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 1000  # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    effort_controller:
+      type: effort_controllers/JointGroupEffortController
+
+    joint_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+# Effort controller configuration (for free/backdrivable mode)
+effort_controller:
+  ros__parameters:
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+    interface_name: effort
+
+# Position controller configuration (for trajectory/MoveIt mode)
+joint_trajectory_controller:
+  ros__parameters:
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+
+    command_interfaces:
+      - position
+
+    state_interfaces:
+      - position
+      - velocity
+
+    constraints:
+      stopped_velocity_tolerance: 0.0
+      goal_time: 0.0
+      joint1:
+        trajectory: 1.0
+        goal: 0.0
+      joint2:
+        trajectory: 1.0
+        goal: 0.0
+      joint3:
+        trajectory: 1.0
+        goal: 0.0
+      joint4:
+        trajectory: 1.0
+        goal: 0.0
+      joint5:
+        trajectory: 1.0
+        goal: 0.0
+
+    gains:
+      joint1:
+        p: 0.0
+        d: 0.0
+        i: 0.0
+        i_clamp: 0.0
+        ff_velocity_scale: 0.0
+      joint2:
+        p: 0.0
+        d: 0.0
+        i: 0.0
+        i_clamp: 0.0
+        ff_velocity_scale: 0.0
+      joint3:
+        p: 0.0
+        d: 0.0
+        i: 0.0
+        i_clamp: 0.0
+        ff_velocity_scale: 0.0
+      joint4:
+        p: 0.0
+        d: 0.0
+        i: 0.0
+        i_clamp: 0.0
+        ff_velocity_scale: 0.0
+      joint5:
+        p: 0.0
+        d: 0.0
+        i: 0.0
+        i_clamp: 0.0
+        ff_velocity_scale: 0.0

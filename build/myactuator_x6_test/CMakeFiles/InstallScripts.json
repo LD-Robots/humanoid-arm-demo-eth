@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/andrei-dragomir/ros2_eth/build/myactuator_x6_test/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

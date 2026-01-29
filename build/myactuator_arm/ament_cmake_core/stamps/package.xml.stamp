@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>myactuator_arm</name>
+  <version>0.1.0</version>
+  <description>MyActuator X6 robotic arm control package with EtherCAT interface</description>
+  <maintainer email="andrei@example.com">Andrei Dragomir</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- ROS2 Core -->
+  <depend>rclpy</depend>
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+
+  <!-- Robot Description -->
+  <depend>robot_state_publisher</depend>
+  <depend>xacro</depend>
+  <depend>urdf</depend>
+
+  <!-- ros2_control -->
+  <depend>controller_manager</depend>
+  <depend>controller_manager_msgs</depend>
+  <depend>joint_state_broadcaster</depend>
+  <depend>effort_controllers</depend>
+  <depend>joint_trajectory_controller</depend>
+
+  <!-- EtherCAT -->
+  <depend>ethercat_driver</depend>
+  <depend>ethercat_generic_plugins</depend>
+
+  <!-- Visualization -->
+  <depend>rviz2</depend>
+
+  <!-- MoveIt -->
+  <depend>moveit_ros_move_group</depend>
+  <depend>moveit_configs_utils</depend>
+
+  <!-- Launch -->
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

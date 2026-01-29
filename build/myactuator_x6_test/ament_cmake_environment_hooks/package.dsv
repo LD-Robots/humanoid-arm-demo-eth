@@ -1,0 +1,4 @@
+source;share/myactuator_x6_test/local_setup.bash
+source;share/myactuator_x6_test/local_setup.dsv
+source;share/myactuator_x6_test/local_setup.sh
+source;share/myactuator_x6_test/local_setup.zsh

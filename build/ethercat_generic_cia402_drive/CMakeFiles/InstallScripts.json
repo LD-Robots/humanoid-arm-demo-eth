@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/andrei-dragomir/ros2_eth/build/ethercat_generic_cia402_drive/cmake_install.cmake",
+		"/home/andrei-dragomir/ros2_eth/build/ethercat_generic_cia402_drive/gmock/cmake_install.cmake",
+		"/home/andrei-dragomir/ros2_eth/build/ethercat_generic_cia402_drive/gtest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

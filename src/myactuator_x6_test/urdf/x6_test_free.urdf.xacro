@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="x6_test_free">
+  <xacro:arg name="pkg_share" default=""/>
+
+  <!-- Dual motor setup for free movement (CST torque control mode) -->
+  <link name="world"/>
+
+  <!-- Motor 0 (slave position 0) -->
+  <link name="motor0_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.1"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </visual>
+  </link>
+
+  <joint name="motor0_joint" type="revolute">
+    <parent link="world"/>
+    <child link="motor0_link"/>
+    <origin xyz="0 0.15 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.75" upper="3.14" velocity="16.0" effort="3.0"/>
+  </joint>
+
+  <!-- Motor 1 (slave position 1) -->
+  <link name="motor1_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.1"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </visual>
+  </link>
+
+  <joint name="motor1_joint" type="revolute">
+    <parent link="world"/>
+    <child link="motor1_link"/>
+    <origin xyz="0 -0.15 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-2.98" upper="0.2" velocity="16.0" effort="3.0"/>
+  </joint>
+
+  <!-- ros2_control configuration - CST (Torque) mode for free movement -->
+  <ros2_control name="EthercatSystem" type="system">
+    <hardware>
+      <plugin>ethercat_driver/EthercatDriver</plugin>
+      <param name="master_id">0</param>
+      <param name="control_frequency">100</param>
+    </hardware>
+
+    <!-- Motor 0 - EtherCAT slave position 0 (with 90° offset) -->
+    <joint name="motor0_joint">
+      <command_interface name="velocity"/>
+      <command_interface name="position"/>
+      <command_interface name="effort"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+      <ec_module name="MyActuatorX6_0">
+        <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
+        <param name="alias">0</param>
+        <param name="position">0</param>
+        <param name="slave_config">$(arg pkg_share)/config/myactuator_x6_motor0.yaml</param>
+        <param name="mode_of_operation">10</param>  <!-- CST mode for torque control -->
+      </ec_module>
+    </joint>
+
+    <!-- Motor 1 - EtherCAT slave position 1 -->
+    <joint name="motor1_joint">
+      <command_interface name="velocity"/>
+      <command_interface name="position"/>
+      <command_interface name="effort"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+      <ec_module name="MyActuatorX6_1">
+        <plugin>ethercat_generic_plugins/EcCiA402Drive</plugin>
+        <param name="alias">0</param>
+        <param name="position">1</param>
+        <param name="slave_config">$(arg pkg_share)/config/myactuator_x6_motor1.yaml</param>
+        <param name="mode_of_operation">10</param>  <!-- CST mode for torque control -->
+      </ec_module>
+    </joint>
+  </ros2_control>
+
+</robot>

@@ -1,0 +1,66 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    effort_controller:
+      type: forward_command_controller/ForwardCommandController
+
+    joint_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+effort_controller:
+  ros__parameters:
+    joints:
+      - motor0_joint
+      - motor1_joint
+    interface_name: effort
+
+joint_trajectory_controller:
+  ros__parameters:
+    joints:
+      - motor0_joint
+      - motor1_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    state_publish_rate: 50.0
+    action_monitor_rate: 20.0
+    allow_partial_joints_goal: false
+    allow_integration_in_goal_trajectories: true
+    
+    # New way to achieve backdrivability (replaces deprecated open_loop_control)
+    # Zero gains + interpolate from desired state = no holding torque between trajectories
+    gains:
+      motor0_joint:
+        p: 0.0
+        d: 0.0
+        i: 0.0
+        i_clamp: 0.0
+      motor1_joint:
+        p: 0.0
+        d: 0.0
+        i: 0.0
+        i_clamp: 0.0
+    
+    # Safety constraints - very forgiving for full-speed operation
+    constraints:
+      stopped_velocity_tolerance: 0.1
+      goal_time: 0.0
+      motor0_joint:
+        trajectory: 1.0  # Allow large tracking error at high speeds
+        goal: 0.15       # Goal position tolerance (rad)
+      motor1_joint:
+        trajectory: 1.0
+        goal: 0.15
+    
+    # State tolerances - disabled for maximum performance
+    # Comment out to disable state tolerance checking entirely
+    # state_tolerance:
+    #   motor_joint:
+    #     position: 1.0
+    #     velocity: 2.0

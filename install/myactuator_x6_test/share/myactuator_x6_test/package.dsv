@@ -1,0 +1,8 @@
+source;share/myactuator_x6_test/hook/cmake_prefix_path.ps1
+source;share/myactuator_x6_test/hook/cmake_prefix_path.dsv
+source;share/myactuator_x6_test/hook/cmake_prefix_path.sh
+source;share/myactuator_x6_test/local_setup.bash
+source;share/myactuator_x6_test/local_setup.dsv
+source;share/myactuator_x6_test/local_setup.ps1
+source;share/myactuator_x6_test/local_setup.sh
+source;share/myactuator_x6_test/local_setup.zsh

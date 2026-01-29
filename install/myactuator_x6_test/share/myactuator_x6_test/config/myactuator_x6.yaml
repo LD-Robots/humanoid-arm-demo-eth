@@ -1,0 +1,79 @@
+# MyActuator X6 EtherCAT Configuration
+# CiA402-compliant servo drive with SI unit conversion
+
+vendor_id: 0x00202008
+product_id: 0x00000000
+assign_activate: 0x0300  # DC Sync enabled
+
+# Drive settings
+auto_fault_reset: true
+auto_state_transitions: true
+# Supported modes (per MyActuator docs):
+#   8 = CSP (Cyclic Sync Position)
+#   9 = CSV (Cyclic Sync Velocity)
+#   10 = CST (Cyclic Sync Torque)
+mode_of_operation: 10  # CST mode for effort control
+
+# Unit conversion factors for MyActuator X6:
+# Encoder: 131072 counts/rev (17-bit) - OUTPUT encoder (after gearbox)
+# Gear ratio: 19.612:1 (not used in position calc - output encoder is post-gearbox)
+# Rated torque: 20 Nm
+# counts_per_output_rev = 131072 (output encoder, no gear ratio)
+# position/velocity factor (cmd): 131072 / (2*pi) = 20861.0
+# position/velocity factor (state): (2*pi) / 131072 = 4.794e-5
+# effort factor (cmd): 1000 / 20 = 50.0
+# effort factor (state): 20 / 1000 = 0.02
+
+# SDO configuration - set limits at startup
+# CiA402 limit objects:
+#   0x6072: Max torque (permille of rated, 1000 = 100% = 20Nm)
+#   0x607F: Max profile velocity (counts/s, motor side)
+#   0x6080: Max motor speed (RPM, motor side) - NOT SUPPORTED
+#   0x60E0: Positive torque limit (permille) - NOT SUPPORTED
+#   0x60E1: Negative torque limit (permille) - NOT SUPPORTED
+#
+# X6-60 limits:
+#   - Rated torque: 20 Nm (1000 permille)
+#   - Peak torque: 60 Nm (3000 permille, short duration)
+#   - Max speed: 176 RPM output = 3452 RPM motor side
+#
+# NOTE: Mode of operation (0x6060) is NOT set here - it's controlled by the URDF ec_module parameter
+#       This allows different motors to use different modes while sharing the same config file
+sdo:
+  # Removed 0x6060 (mode) - now set via URDF ec_module parameter only
+  - {index: 0x6072, sub_index: 0, type: uint16, value: 1000}     # Max torque: 100% of rated (20Nm)
+  # Note: 0x6080, 0x60E0, 0x60E1 not supported by MyActuator X6 - removed
+
+# RxPDO - Commands to motor (SM2)
+# For commands: raw = factor * SI + offset
+rpdo:
+  - index: 0x1600
+    channels:
+      - {index: 0x6040, sub_index: 0, type: uint16, command_interface: ~, default: 0}
+      # Position: radians -> counts (output encoder)
+      - {index: 0x607a, sub_index: 0, type: int32, command_interface: position, factor: 20861.0, default: 0}
+      # Velocity: rad/s -> counts/s (output encoder)
+      - {index: 0x60ff, sub_index: 0, type: int32, command_interface: velocity, factor: 20861.0, default: 0}
+      # Effort: Nm -> permille of rated torque
+      - {index: 0x6071, sub_index: 0, type: int16, command_interface: effort, factor: 50.0, default: 0}
+      - {index: 0x6072, sub_index: 0, type: int16, command_interface: ~, default: 1000}
+      - {index: 0x6060, sub_index: 0, type: int8, command_interface: ~, default: 10}
+      - {index: 0x5ff1, sub_index: 0, type: int8, command_interface: ~, default: 0}
+
+# TxPDO - Feedback from motor (SM3)
+# For state feedback: SI = factor * raw + offset
+# Position offset: set to shift the zero point (in radians)
+#   e.g., offset: -1.5708 would shift zero by -90 degrees
+tpdo:
+  - index: 0x1a00
+    channels:
+      - {index: 0x6041, sub_index: 0, type: uint16, state_interface: ~}
+      # Position: counts -> radians (output encoder, offset: adjust to set zero point)
+      - {index: 0x6064, sub_index: 0, type: int32, state_interface: position, factor: 4.794e-5, offset: 0.0}
+      # Velocity: counts/s -> rad/s (output encoder)
+      - {index: 0x606c, sub_index: 0, type: int32, state_interface: velocity, factor: 4.794e-5}
+      # Effort: permille -> Nm
+      - {index: 0x6077, sub_index: 0, type: int16, state_interface: effort, factor: 0.02}
+      - {index: 0x603f, sub_index: 0, type: uint16, state_interface: ~}
+      - {index: 0x6061, sub_index: 0, type: int8, state_interface: ~}
+      - {index: 0x5ff2, sub_index: 0, type: int8, state_interface: ~}

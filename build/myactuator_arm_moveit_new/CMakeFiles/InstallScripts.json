@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/andrei-dragomir/ros2_eth/build/myactuator_arm_moveit_new/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

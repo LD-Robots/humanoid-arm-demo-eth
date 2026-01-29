@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>myactuator_x6_test</name>
+  <version>0.1.0</version>
+  <description>Test package for MyActuator X6 EtherCAT motor</description>
+  <maintainer email="user@example.com">user</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <depend>ethercat_driver</depend>
+  <depend>ethercat_generic_plugins</depend>
+  <depend>controller_manager</depend>
+  <depend>velocity_controllers</depend>
+  <depend>position_controllers</depend>
+  <depend>effort_controllers</depend>
+  <depend>joint_trajectory_controller</depend>
+  <depend>joint_state_broadcaster</depend>
+  <depend>robot_state_publisher</depend>
+  <depend>xacro</depend>
+  <depend>control_msgs</depend>
+  <depend>rclpy</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
