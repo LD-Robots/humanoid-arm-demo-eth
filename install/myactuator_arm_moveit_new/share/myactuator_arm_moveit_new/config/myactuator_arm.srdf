@@ -25,6 +25,34 @@
         <joint name="joint4" value="0"/>
         <joint name="joint5" value="0"/>
     </group_state>
+    <group_state name="ready" group="arm">
+        <joint name="joint1" value="-0.2391"/>
+        <joint name="joint2" value="-0.1532"/>
+        <joint name="joint3" value="-0.3247"/>
+        <joint name="joint4" value="1.0073"/>
+        <joint name="joint5" value="0"/>
+    </group_state>
+    <group_state name="hi5" group="arm">
+        <joint name="joint1" value="2.5012"/>
+        <joint name="joint2" value="-0.0118"/>
+        <joint name="joint3" value="0.0338"/>
+        <joint name="joint4" value="0.6487"/>
+        <joint name="joint5" value="1.5196"/>
+    </group_state>
+    <group_state name="hello" group="arm">
+        <joint name="joint1" value="0"/>
+        <joint name="joint2" value="-1.6385"/>
+        <joint name="joint3" value="1.468"/>
+        <joint name="joint4" value="1.4512"/>
+        <joint name="joint5" value="0"/>
+    </group_state>
+    <group_state name="up" group="arm">
+        <joint name="joint1" value="-0.0854"/>
+        <joint name="joint2" value="-2.9"/>
+        <joint name="joint3" value="1.3484"/>
+        <joint name="joint4" value="0"/>
+        <joint name="joint5" value="0"/>
+    </group_state>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="base_link"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
