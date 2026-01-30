@@ -1,1 +1,0 @@
-control_msgs:controller_manager:effort_controllers:ethercat_driver:ethercat_generic_plugins:joint_state_broadcaster:joint_trajectory_controller:position_controllers:rclpy:robot_state_publisher:velocity_controllers:xacro

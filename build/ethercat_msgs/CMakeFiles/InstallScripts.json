@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/andrei-dragomir/ros2_eth/build/ethercat_msgs/cmake_install.cmake",
-		"/home/andrei-dragomir/ros2_eth/build/ethercat_msgs/ethercat_msgs__py/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

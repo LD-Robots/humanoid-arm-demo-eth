@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/andrei-dragomir/ros2_eth/build/ethercat_manager/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

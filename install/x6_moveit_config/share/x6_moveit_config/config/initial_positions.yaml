@@ -1,4 +1,0 @@
-# Default initial positions for x6_test's ros2_control fake system
-
-initial_positions:
-  motor_joint: 0.0

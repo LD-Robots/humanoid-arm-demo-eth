@@ -1,9 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/andrei-dragomir/ros2_eth/build/ethercat_driver/cmake_install.cmake",
-		"/home/andrei-dragomir/ros2_eth/build/ethercat_driver/gmock/cmake_install.cmake",
-		"/home/andrei-dragomir/ros2_eth/build/ethercat_driver/gtest/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

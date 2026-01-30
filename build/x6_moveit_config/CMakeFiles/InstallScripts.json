@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/andrei-dragomir/ros2_eth/build/x6_moveit_config/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

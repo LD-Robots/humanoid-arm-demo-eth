@@ -1,1 +1,0 @@
-rclpy;rclcpp;std_msgs;sensor_msgs;robot_state_publisher;xacro;urdf;controller_manager;controller_manager_msgs;joint_state_broadcaster;effort_controllers;joint_trajectory_controller;ethercat_driver;ethercat_generic_plugins;rviz2;moveit_ros_move_group;moveit_configs_utils;launch;launch_ros

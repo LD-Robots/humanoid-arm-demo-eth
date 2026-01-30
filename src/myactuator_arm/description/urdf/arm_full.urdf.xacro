@@ -10,7 +10,7 @@
     <hardware>
       <plugin>ethercat_driver/EthercatDriver</plugin>
       <param name="master_id">0</param>
-      <param name="control_frequency">250</param>
+      <param name="control_frequency">100</param>
     </hardware>
 
     <!-- Joint 1: Shoulder pitch - X6 motor, slave 0 -->
