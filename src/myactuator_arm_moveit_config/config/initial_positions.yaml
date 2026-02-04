@@ -1,8 +1,10 @@
 # Default initial positions for myactuator_arm's ros2_control fake system
+# Use "ready" configuration to avoid singularity (bent position)
 
 initial_positions:
-  joint1: 0
-  joint2: 0
-  joint3: 0
-  joint4: 0
-  joint5: 0
+  shoulder_pitch_joint: 0.0
+  shoulder_roll_joint: 0.7854
+  shoulder_yaw_joint: 0.0
+  elbow_pitch_joint: 0.7854
+  elbow_yaw_joint: 0.0
+  wrist_roll_joint: 0.0

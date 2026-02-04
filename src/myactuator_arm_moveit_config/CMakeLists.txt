@@ -14,3 +14,11 @@ endif()
 
 install(DIRECTORY config DESTINATION share/${PROJECT_NAME})
 install(FILES .setup_assistant DESTINATION share/${PROJECT_NAME})
+
+# Install Python scripts
+install(
+  PROGRAMS
+    scripts/keyboard_servo.py
+    scripts/joystick_servo.py
+  DESTINATION lib/${PROJECT_NAME}
+)

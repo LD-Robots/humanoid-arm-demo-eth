@@ -285,12 +285,12 @@
     </collision>
   </link>
 
-  <!-- Link 5: Lower forearm and hand (yaw rotation) -->
-  <link name="end_effector_link">
+  <!-- Link 5: Lower forearm (yaw rotation) -->
+  <link name="wrist_link">
     <inertial>
-      <origin xyz="-2.78156e-05 0.00215422 -0.147028" rpy="0 0 0"/>
-      <mass value="0.558"/>
-      <inertia ixx="0.00382826" ixy="-3.16312e-08" ixz="2.02243e-07" iyy="0.00375463" iyz="-2.11667e-05" izz="0.000416359"/>
+      <origin xyz="-2.78156e-05 0.00215422 -0.08" rpy="0 0 0"/>
+      <mass value="0.3"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.0002"/>
     </inertial>
     <visual>
       <origin xyz="0 -0.09 0.023" rpy="1.5708 -1.5708 0"/>
@@ -318,8 +318,17 @@
         <mesh filename="package://myactuator_arm/description/meshes/l_lower_forearm.stl"/>
       </geometry>
     </collision>
+  </link>
+
+  <!-- Link 6: End effector / Hand (roll rotation - 6th DOF) -->
+  <link name="end_effector_link">
+    <inertial>
+      <origin xyz="0 0 -0.08" rpy="0 0 0"/>
+      <mass value="0.258"/>
+      <inertia ixx="0.002" ixy="0" ixz="0" iyy="0.002" iyz="0" izz="0.0002"/>
+    </inertial>
     <visual>
-      <origin xyz="0 0 -0.252" rpy="0 0 1.5708"/>
+      <origin xyz="0 0 -0.162" rpy="0 0 1.5708"/>
       <geometry>
         <mesh filename="package://myactuator_arm/description/meshes/hand.stl"/>
       </geometry>
@@ -328,73 +337,73 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 -0.252" rpy="0 0 1.5708"/>
+      <origin xyz="0 0 -0.162" rpy="0 0 1.5708"/>
       <geometry>
         <mesh filename="package://myactuator_arm/description/meshes/hand.stl"/>
       </geometry>
     </collision>
-    <!-- Gripper fingers collision (using simplified hand collision for now) -->
+    <!-- Gripper fingers -->
     <visual>
-      <origin xyz="0 0 -0.252" rpy="0 0 1.5708"/>
+      <origin xyz="0 0 -0.162" rpy="0 0 1.5708"/>
       <geometry>
         <mesh filename="package://myactuator_arm/description/meshes/f1.stl"/>
       </geometry>
       <material name="white"/>
     </visual>
     <collision>
-      <origin xyz="0 0 -0.252" rpy="0 0 1.5708"/>
+      <origin xyz="0 0 -0.162" rpy="0 0 1.5708"/>
       <geometry>
         <mesh filename="package://myactuator_arm/description/meshes/f1.stl"/>
       </geometry>
     </collision>
     <visual>
-      <origin xyz="0 0 -0.252" rpy="0 0 1.5708"/>
+      <origin xyz="0 0 -0.162" rpy="0 0 1.5708"/>
       <geometry>
         <mesh filename="package://myactuator_arm/description/meshes/f2.stl"/>
       </geometry>
       <material name="white"/>
     </visual>
     <collision>
-      <origin xyz="0 0 -0.252" rpy="0 0 1.5708"/>
+      <origin xyz="0 0 -0.162" rpy="0 0 1.5708"/>
       <geometry>
         <mesh filename="package://myactuator_arm/description/meshes/f2.stl"/>
       </geometry>
     </collision>
     <visual>
-      <origin xyz="0 0 -0.252" rpy="0 0 1.5708"/>
+      <origin xyz="0 0 -0.162" rpy="0 0 1.5708"/>
       <geometry>
         <mesh filename="package://myactuator_arm/description/meshes/f3.stl"/>
       </geometry>
       <material name="white"/>
     </visual>
     <collision>
-      <origin xyz="0 0 -0.252" rpy="0 0 1.5708"/>
+      <origin xyz="0 0 -0.162" rpy="0 0 1.5708"/>
       <geometry>
         <mesh filename="package://myactuator_arm/description/meshes/f3.stl"/>
       </geometry>
     </collision>
     <visual>
-      <origin xyz="0 0 -0.252" rpy="0 0 1.5708"/>
+      <origin xyz="0 0 -0.162" rpy="0 0 1.5708"/>
       <geometry>
         <mesh filename="package://myactuator_arm/description/meshes/f4.stl"/>
       </geometry>
       <material name="white"/>
     </visual>
     <collision>
-      <origin xyz="0 0 -0.252" rpy="0 0 1.5708"/>
+      <origin xyz="0 0 -0.162" rpy="0 0 1.5708"/>
       <geometry>
         <mesh filename="package://myactuator_arm/description/meshes/f4.stl"/>
       </geometry>
     </collision>
     <visual>
-      <origin xyz="0 0 -0.252" rpy="0 0 1.5708"/>
+      <origin xyz="0 0 -0.162" rpy="0 0 1.5708"/>
       <geometry>
         <mesh filename="package://myactuator_arm/description/meshes/f5.stl"/>
       </geometry>
       <material name="white"/>
     </visual>
     <collision>
-      <origin xyz="0 0 -0.252" rpy="0 0 1.5708"/>
+      <origin xyz="0 0 -0.162" rpy="0 0 1.5708"/>
       <geometry>
         <mesh filename="package://myactuator_arm/description/meshes/f5.stl"/>
       </geometry>
@@ -437,12 +446,22 @@
     <limit lower="-1.57087" upper="1.57072" velocity="16.0" effort="10.0"/>
   </joint>
 
-  <!-- Joint 5: Elbow yaw -->
+  <!-- Joint 5: Wrist pitch -->
   <joint name="joint5" type="revolute">
     <origin xyz="0 -0.151 0.023" rpy="-1.5708 -1.5708 0"/>
     <parent link="upper_forearm_link"/>
-    <child link="end_effector_link"/>
+    <child link="wrist_link"/>
     <axis xyz="0 0 1"/>
     <limit lower="-1.5708" upper="1.5708" velocity="16.0" effort="10.0"/>
+  </joint>
+
+  <!-- Joint 6: Wrist roll (6th DOF for full Cartesian control) -->
+  <!-- Using Y axis to ensure independence from joint5 (which uses Z after its rpy transform) -->
+  <joint name="joint6" type="revolute">
+    <origin xyz="0 0 -0.09" rpy="0 0 0"/>
+    <parent link="wrist_link"/>
+    <child link="end_effector_link"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-3.14159" upper="3.14159" velocity="16.0" effort="10.0"/>
   </joint>
 </robot>

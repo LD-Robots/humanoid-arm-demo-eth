@@ -25,6 +25,12 @@ install(DIRECTORY
   DESTINATION share/${PROJECT_NAME}
 )
 
+# Install robot_arm_6dof folder (meshes and URDF)
+install(DIRECTORY
+  robot_arm_6dof
+  DESTINATION share/${PROJECT_NAME}
+)
+
 # Install launch files
 install(DIRECTORY
   launch

@@ -12,40 +12,44 @@ controller_manager:
 joint_trajectory_controller:
   ros__parameters:
     joints:
-      - joint1
-      - joint2
-      - joint3
-      - joint4
-      - joint5
-    
+      - shoulder_pitch_joint
+      - shoulder_roll_joint
+      - shoulder_yaw_joint
+      - elbow_pitch_joint
+      - elbow_yaw_joint
+      - wrist_roll_joint
+
     command_interfaces:
       - position
-    
+
     state_interfaces:
       - position
       - velocity
-    
+
     # Allow smooth stops (important for backdrivable robots)
     allow_nonzero_velocity_at_trajectory_end: true
-    
+
     # Trajectory constraints (for real hardware, set reasonable tolerances)
     constraints:
       stopped_velocity_tolerance: 0.05  # rad/s
       goal_time: 0.5  # seconds - allow some time to reach goal
-      
+
       # Per-joint trajectory tolerances
-      joint1:
+      shoulder_pitch_joint:
         trajectory: 0.05  # rad - during trajectory execution
         goal: 0.01  # rad - at goal position
-      joint2:
+      shoulder_roll_joint:
         trajectory: 0.05
         goal: 0.01
-      joint3:
+      shoulder_yaw_joint:
         trajectory: 0.05
         goal: 0.01
-      joint4:
+      elbow_pitch_joint:
         trajectory: 0.05
         goal: 0.01
-      joint5:
+      elbow_yaw_joint:
+        trajectory: 0.05
+        goal: 0.01
+      wrist_roll_joint:
         trajectory: 0.05
         goal: 0.01
